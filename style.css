@@ -1,6 +1,7 @@
 :root {
   --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   --pink: hsl(335, 100%, 65%);
+  --orange: hsl(6, 100%, 80%);
   --pale_blue: hsl(243, 100%, 93%);
   --grayish_blue: hsl(229, 7%, 55%);
   --dark_blue: hsl(228, 56%, 26%);
@@ -14,7 +15,7 @@ body {
   font-size: var(--body_text);
   background: url("./images/bg-desktop.png") no-repeat left bottom;
   background-attachment:fixed;
-  background-size: contain;
+  background-size: auto;
   background-color: var(--very_dark_blue);
   justify-content: space-around;
   color: var(--pale_blue);
@@ -158,4 +159,72 @@ body {
 
 .mt-1 {
     margin-top: 1rem;
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+/* Footer */
+.attribution {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--pale_blue);
+    font-size: 0.75rem;
+}
+
+a {
+    white-space: nowrap;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: var(--orange);
+}
+
+@media (max-width: 860px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-card {
+        margin-right: 0rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .card {
+        padding: 2rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .right-card {
+        padding-bottom: 3rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .text-bubble {
+        top: 7rem;
+        right: 5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-bubble {
+        top: 8rem;
+        right: 3rem;
+    }
 }
