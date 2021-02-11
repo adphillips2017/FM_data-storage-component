@@ -1,0 +1,161 @@
+:root {
+  --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  --pink: hsl(335, 100%, 65%);
+  --pale_blue: hsl(243, 100%, 93%);
+  --grayish_blue: hsl(229, 7%, 55%);
+  --dark_blue: hsl(228, 56%, 26%);
+  --very_dark_blue: hsl(229, 57%, 11%);
+
+  --body_text: .875rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--body_text);
+  background: url("./images/bg-desktop.png") no-repeat left bottom;
+  background-attachment:fixed;
+  background-size: contain;
+  background-color: var(--very_dark_blue);
+  justify-content: space-around;
+  color: var(--pale_blue);
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 75%;
+    max-width: 65rem;
+    display: flex;
+}
+
+.card {
+    background-color: var(--dark_blue);
+    border-radius: 1rem;
+    padding: 2.75rem;
+}
+
+.left-card {
+    margin-right: 2rem;
+    flex: 4;
+    border-top-right-radius: 6rem;
+    height: 9rem;
+}
+
+.right-card {
+    flex: 7;
+    height: 6rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.icon-row {
+    width: 100%;
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.icon-container {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--very_dark_blue);
+    border-radius: 10px;
+    margin-right: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.progress-bar-outter {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--very_dark_blue);
+    border-radius: 2rem;
+    border: 1px solid var(--very_dark_blue);
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.progress-bar-inner {
+    width: 80%;
+    height: 100%;
+    border: 1px solid var(--dark_blue);
+    border-radius: 2rem;
+    background-image: var(--gradient);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.progress-bar-circle {
+    height: .7rem;
+    width: .7rem;
+    margin-top: .1rem;
+    margin-right: .1rem;
+    background-color: var(--pale_blue);
+    border: 1px solid var(--pink);
+    border-radius: 100%;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-bubble {
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    border-radius: .5rem;
+    background-color: var(--pale_blue);
+    width: 9rem;
+    padding: 1rem;
+    text-align: center;
+    align-self: center;
+    color: var(--grayish_blue);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid var(--very_dark_blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+
+.bottom {
+    border-color: transparent black transparent transparent;
+    border-width: 20px 20px 20px 20px;
+    bottom: -21px;
+    right: 0rem;
+}
+
+.bottom:after {
+    border-color: transparent var(--pale_blue) transparent transparent;
+    border-style: solid;
+    border-width: 19px 19px 19px 19px;
+    bottom: 1px;
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: -21px;
+}
+
+.bubble-arrow {
+    border-style: solid;
+    position: absolute;
+}
+
+.large-text {
+    font-size: 2.5rem;
+    color: var(--very_dark_blue);
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
